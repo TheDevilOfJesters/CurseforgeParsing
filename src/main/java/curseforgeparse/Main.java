@@ -1,17 +1,21 @@
 package curseforgeparse;
 
-import curseforgeparse.utilities.SeleniumSetup;
-import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
-import static curseforgeparse.utilities.SeleniumSetup.*;
-import static curseforgeparse.siteparsings.ParseSearchPage.*;
+import java.util.logging.Logger;
+
+import static curseforgeparse.siteparsings.ParseSearchPage.parseSearchPage;
+import static curseforgeparse.utilities.SeleniumSetup.setupDriver;
+import static curseforgeparse.utilities.SeleniumSetup.teardown;
 
 public class Main {
-    static Logger logger = Logger.getLogger(Main.class);
+    static Logger logger;
+
+    static {
+        logger = Logger.getLogger(String.valueOf(Main.class));
+    }
 
     public static void main(String[] args) {
-        org.apache.log4j.BasicConfigurator.configure();
         logger.info("Starting timing");
         WebDriver driver = setupDriver();
         try{
