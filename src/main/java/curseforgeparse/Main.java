@@ -9,11 +9,8 @@ import static curseforgeparse.utilities.SeleniumSetup.setupDriver;
 import static curseforgeparse.utilities.SeleniumSetup.teardown;
 
 public class Main {
-    static Logger logger;
+    static Logger logger = Logger.getLogger(String.valueOf(Main.class));
 
-    static {
-        logger = Logger.getLogger(String.valueOf(Main.class));
-    }
 
     public static void main(String[] args) {
         logger.info("Starting timing");
