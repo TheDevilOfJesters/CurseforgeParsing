@@ -20,8 +20,9 @@ public class ParseSearchPage {
         System.out.println("Page number: " + getCurrentPage());
         driver.findElement(By.xpath("/html/body/div[4]/main/div[1]/div[2]/section/div[2]/div/div[1]/div/div[2]/div[2]/div/a[4]")).click();
         testPageLoaded();
+        System.out.println("\n");
         scrapeListingsLoop();
-        System.out.println("Page number: " + getCurrentPage());
+//        System.out.println("Page number: " + getCurrentPage());
         navigatePages();
     }
 
@@ -32,29 +33,32 @@ public class ParseSearchPage {
 
     public static void scrapeListingsLoop(){
         List<WebElement> listings = driver.findElements(By.xpath("/html/body/div[4]/main/div[1]/div[2]/section/div[2]/div/div[3]/div/div"));
-        LIstingBreak(listings.get(1));
-        System.out.println("Number of listings: " + listings.size());
+        ListingBreak(listings.get(1));
+//        System.out.println("Number of listings: " + listings.size());
     }
-    public static void LIstingBreak(WebElement listing){
-        System.out.println("test 0");
+    public static void ListingBreak(WebElement listing){
         WebElement infoBar = listing.findElement(By.className("items-end"));
         String title = infoBar.findElement(By.tagName("h3")).getText();
         System.out.println(title);
 
-        String author = infoBar.findElement(By.className(("text" +"base"))).getText();
+        String author = infoBar.findElement(By.xpath(("a[2]"))).getText();
         System.out.println(author);
 
-        WebElement dataBar = listing.findElement(By.xpath("//div/div[2]/div[2]"));
-        String dowloads = dataBar.findElement(By.xpath("//span[1]")).getText();
+        WebElement dataBar = listing.findElement(By.className("my-1"));
+//        WebElement dataBar = listing.findElement(By.xpath("//div/div[2]/div[2]"));
+        String dowloads = dataBar.findElement(By.xpath("span[1]")).getText();
+        String Updated = dataBar.findElement(By.xpath("span[2]")).getText();
+        String created = dataBar.findElement(By.xpath("span[3]")).getText();
+
+        String description = listing.findElement(By.className("leading-snug")).getText();
 
         System.out.println(dowloads);
+        System.out.println(Updated);
+        System.out.println(created);
+        System.out.println(description);
 
-
-//                "/html/body/div[4]/main/div[1]/div[2]/section/div[2]/div/div[3]/div/div"
-//                   /html/body/div[4]/main/div[1]/div[2]/section/div[2]/div/div[3]/div/div[2]/div/div[2]/div[1]/a[2]
-//                   /html/body/div[4]/main/div[1]/div[2]/section/div[2]/div/div[3]/div/div[3]/div/div[2]/div[1]/a[2]
-//                   /html/body/div[4]/main/div[1]/div[2]/section/div[2]/div/div[3]/div/div[3]/div/div[2]/div[1]/a[2]
-//                   /html/body/div[4]/main/div[1]/div[2]/section/div[2]/div/div[3]/div/div[9]/div/div[2]/div[1]/a[2]
+        List<WebElement> tags = listing.findElements(By.xpath("/div/div[3]/div"));
+        System.out.println(tags.size());
     }
 
 

@@ -14,3 +14,11 @@ using
 * Selenium
 * Selenium Webdriver manager
 * SLF4J as my logger. 
+
+---
+I haven't decided a database tech yet, leaning towards MySQL since I know it, but also considering MongoDB.
+Also open to suggestions. 
+
+Open to other ideas, and contributions, 
+
+Still leanring github so I appologize if I don't get to merge requests quickly 
