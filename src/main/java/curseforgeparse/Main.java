@@ -9,7 +9,11 @@ import static curseforgeparse.utilities.SeleniumSetup.setupDriver;
 import static curseforgeparse.utilities.SeleniumSetup.teardown;
 
 public class Main {
+<<<<<<< HEAD
     public static Logger logger = Logger.getLogger(String.valueOf(Main.class));
+=======
+    static Logger logger = Logger.getLogger(String.valueOf(Main.class));
+>>>>>>> 6054e2eaae031701dd91618839e677b33f53c5d1
 
 
     public static void main(String[] args) {
