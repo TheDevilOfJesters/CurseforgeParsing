@@ -20,7 +20,6 @@ public class ParseSearchPage {
         System.out.println("Page number: " + getCurrentPage());
         driver.findElement(By.xpath("/html/body/div[4]/main/div[1]/div[2]/section/div[2]/div/div[1]/div/div[2]/div[2]/div/a[4]")).click();
         testPageLoaded();
-        System.out.println("\n");
         scrapeListingsLoop();
 //        System.out.println("Page number: " + getCurrentPage());
         navigatePages();
@@ -38,11 +37,17 @@ public class ParseSearchPage {
     }
     public static void ListingBreak(WebElement listing){
         WebElement infoBar = listing.findElement(By.className("items-end"));
-        String title = infoBar.findElement(By.tagName("h3")).getText();
-        System.out.println(title);
+        WebElement titleE = infoBar.findElement(By.tagName("h3"));
+        String title = titleE.getText();
+        String packtitleUrl = titleE.findElement(By.xpath("./..")).getAttribute("href");
 
-        String author = infoBar.findElement(By.xpath(("a[2]"))).getText();
+        System.out.println(title);
+        System.out.println(packtitleUrl);
+        WebElement authorE = infoBar.findElement(By.xpath(("a[2]")));
+        String author = authorE.getText();
+        String urlAuthor = authorE.getAttribute("href");
         System.out.println(author);
+        System.out.println(urlAuthor);
 
         WebElement dataBar = listing.findElement(By.className("my-1"));
 //        WebElement dataBar = listing.findElement(By.xpath("//div/div[2]/div[2]"));
@@ -57,7 +62,8 @@ public class ParseSearchPage {
         System.out.println(created);
         System.out.println(description);
 
-        List<WebElement> tags = listing.findElements(By.xpath("/div/div[3]/div"));
+
+        List<WebElement> tags = listing.findElements(By.xpath("div/div[3]/div"));
         System.out.println(tags.size());
     }
 
