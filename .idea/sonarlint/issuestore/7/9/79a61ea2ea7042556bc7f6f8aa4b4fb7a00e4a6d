@@ -1,21 +1,20 @@
 
-U	java:S106J"9Replace this use of System.out or System.err by a logger.(åè”Ù8Î˜Ñ´Ã.
+k	java:S1177"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ—®Òøÿÿÿÿ
+T	java:S106-"9Replace this use of System.out or System.err by a logger.(¼¨º8Øâ´Ã.
+b	java:S100&"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äê”f
+Z	java:S106D"9Replace this use of System.out or System.err by a logger.(ËƒÌ£ıÿÿÿÿ8Î˜Ñ´Ã.
+U	java:S106K"9Replace this use of System.out or System.err by a logger.(åè”Ù8Î˜Ñ´Ã.
+Z	java:S106L"9Replace this use of System.out or System.err by a logger.(òâïáıÿÿÿÿ8Î˜Ñ´Ã.
+U	java:S106,"9Replace this use of System.out or System.err by a logger.(›æŒÁ8Î˜Ñ´Ã.
+Z	java:S106="9Replace this use of System.out or System.err by a logger.(¯êáÒÿÿÿÿÿ8Î˜Ñ´Ã.
+V	java:S125$"<This block of commented-out lines of code should be removed.(ƒ‘®ùÿÿÿÿ
+Z	java:S106<"9Replace this use of System.out or System.err by a logger.(ÿÁ¢şÿÿÿÿ8Î˜Ñ´Ã.
+Z	java:S106>"9Replace this use of System.out or System.err by a logger.(·êÚñüÿÿÿÿ8Î˜Ñ´Ã.
 P	java:S1255"<This block of commented-out lines of code should be removed.(Û¡€
 
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(ÒÊÉĞøÿÿÿÿ8Î˜Ñ´Ã.
-Z	java:S1061"9Replace this use of System.out or System.err by a logger.(³…ìÕıÿÿÿÿ8Î˜Ñ´Ã.
 k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò–¯…ùÿÿÿÿ
-b	java:S100&"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äê”f
+Z	java:S1061"9Replace this use of System.out or System.err by a logger.(³…ìÕıÿÿÿÿ8Î˜Ñ´Ã.
 T	java:S1062"9Replace this use of System.out or System.err by a logger.(ÈèÕ=8—°×´Ã.
-Z	java:S106<"9Replace this use of System.out or System.err by a logger.(ÿÁ¢şÿÿÿÿ8Î˜Ñ´Ã.
-U	java:S106,"9Replace this use of System.out or System.err by a logger.(›æŒÁ8Î˜Ñ´Ã.
-Z	java:S106>"9Replace this use of System.out or System.err by a logger.(·êÚñüÿÿÿÿ8Î˜Ñ´Ã.
-Z	java:S106K"9Replace this use of System.out or System.err by a logger.(òâïáıÿÿÿÿ8Î˜Ñ´Ã.
-V	java:S125"<This block of commented-out lines of code should be removed.(Æ¤ßÕşÿÿÿÿ
-V	java:S125$"<This block of commented-out lines of code should be removed.(ƒ‘®ùÿÿÿÿ
 t	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(®î©şÿÿÿÿ
-T	java:S106-"9Replace this use of System.out or System.err by a logger.(¼¨º8Øâ´Ã.
 Z	java:S106?"9Replace this use of System.out or System.err by a logger.(şÅÂ½ûÿÿÿÿ8Î˜Ñ´Ã.
-Z	java:S106C"9Replace this use of System.out or System.err by a logger.(ËƒÌ£ıÿÿÿÿ8Î˜Ñ´Ã.
-k	java:S1177"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ—®Òøÿÿÿÿ
-Z	java:S106="9Replace this use of System.out or System.err by a logger.(¯êáÒÿÿÿÿÿ8Î˜Ñ´Ã.
+Z	java:S106@"9Replace this use of System.out or System.err by a logger.(ÒÊÉĞøÿÿÿÿ8»çÙÃ.

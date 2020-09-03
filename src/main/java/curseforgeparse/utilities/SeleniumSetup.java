@@ -1,5 +1,6 @@
 package curseforgeparse.utilities;
 
+import curseforgeparse.Main;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
@@ -25,6 +26,7 @@ public final class SeleniumSetup {
 
     public static void teardown() {
         driver.quit();
+        Main.logger.info("\nDriver closed successfully");
     }
 
 

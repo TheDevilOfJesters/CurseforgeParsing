@@ -1,0 +1,16 @@
+{
+    "_id": {
+        "$oid": "5f4fc0ce8f74e982a866aaa4"
+    },
+    "Title": "RLCraft",
+    "Packurl":"https://www.curseforge.com/minecraft/modpacks/rlcraft",
+    "Author": "Shivaxi",
+    "AuthorHome":"https://www.curseforge.com/members/shivaxi",
+    "Downloads": "5.3M",
+    "Updated": "Jun 28, 2020",
+    "Created":"Jan 9, 2018",
+    "Description":"A modpack specially designed to bring an incredibly hardcore and semi-realism challenge revolving around survival,..."
+}
+
+Map<String,String> objectId = new HashMap<String,String>();
+objectId.put("$oid","5399aba6e4b0ae375bfdca88");

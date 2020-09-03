@@ -4,7 +4,8 @@ import org.openqa.selenium.WebDriver;
 
 import java.util.logging.Logger;
 
-import static curseforgeparse.siteparsings.ParseSearchPage.parseSearchPage;
+//import static curseforgeparse.siteparsings.ParseSearchPage.parseSearchPage;
+import static curseforgeparse.siteparsings.ParseSearchPageWIthMongo.parseSearchPage;
 import static curseforgeparse.utilities.SeleniumSetup.setupDriver;
 import static curseforgeparse.utilities.SeleniumSetup.teardown;
 
