@@ -1,0 +1,14 @@
+
+M
+java:S1444"0Make this "public static collection" field final(¢ûµÝ8Ù¶Á«Ö.
+F
+java:S2629O"$Invoke method(s) only conditionally.(Å±ºëýÿÿÿÿ8³ã½îÇ.
+P
+java:S1481W"4Remove this unused "paginationLinks" local variable.(Ø‹ª-8ëÀ¡ñÇ.
+]	java:S125"<This block of commented-out lines of code should be removed.(šÜè×ûÿÿÿÿ8µ¢–ŠÖ.
+_
+java:S1854W"CRemove this useless assignment to local variable "paginationLinks".(Ø‹ª-8ëÀ¡ñÇ.
+s
+java:S1104"VMake collection a static final constant or non-public and provide accessors if needed.(¢ûµÝ8Ù¶Á«Ö.
+X	java:S125"<This block of commented-out lines of code should be removed.(Û¢ôÃ8¥â–ŠÖ.
+X	java:S125/"<This block of commented-out lines of code should be removed.(¨ñ†ê8’­ýñÇ.

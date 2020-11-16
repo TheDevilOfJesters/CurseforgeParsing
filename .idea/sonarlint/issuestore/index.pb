@@ -9,5 +9,15 @@ j
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 W
 'src/main/java/curseforgeparse/Main.java,c\5\c5d69f4b52dc8f2f56db8f953d2690c604e62611
+f
+6src/main/java/curseforgeparse/utilities/template.json',f\e\fe151cd979a0b414b5ed9bcc4cb8fa28bbaac5a9
+g
+7src/main/java/curseforgeparse/classes/ModPackClass.java,e\5\e50f5cddea06e716cf852795cf3249247e1b3841
+l
+<src/main/java/curseforgeparse/classes/ModPackToDBObject.java,d\7\d7fdeb38d88b22acd06098ecc4a2a5b141ee0ff2
+i
+9src/main/java/curseforgeparse/utilities/ConnectionDB.java,a\e\ae0bdc613d9fc22a350e99a5f6c6e2e7e26ebb99
 o
 ?src/main/java/curseforgeparse/siteparsings/ParseSearchPage.java,7\9\79a61ea2ea7042556bc7f6f8aa4b4fb7a00e4a6d
+‚
+Rsrc/main/java/curseforgeparse/siteparsings/ParseSearchPageWIthMongoDeleteThis.java,9\8\98a0bdd8976c179463b653f80ad93106788cc05a

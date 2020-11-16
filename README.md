@@ -5,7 +5,7 @@ I'm sick of not being able to filter by 2 different criteria when searching mods
 so this is the first part of my attempt at some sort of workaround 
 
 ---
-Using selenium I'm going to scrape the curseforge site and pull all the information I can about the modpacks and use that 
+Using selenium I'm going to scrape the curseforge site and pull all the information I can about the modpacks and use that
 my own database. Don't know what happens after this. I'll deal with that once I get there. 
 
 
@@ -17,8 +17,8 @@ using
 
 ---
 I haven't decided a database tech yet, leaning towards MySQL since I know it, but also considering MongoDB.
-Also open to suggestions. 
+I am also open to suggestions. 
 
 Open to other ideas, and contributions, 
 
-Still leanring github so I appologize if I don't get to merge requests quickly 
+Still learning GitHub, so I apologize if I don't get to merge requests quickly 

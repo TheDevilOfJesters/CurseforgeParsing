@@ -1,6 +1,7 @@
 package curseforgeparse.classes;
 
 import java.util.List;
+
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -143,20 +144,20 @@ public class ModPackClass {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "{" + '\n' +
                 '"' + "_id" + '"' + ':' + '{' + '\n' +
                 '"' + "$oid" + '"' + ':' + '"' + id + '"' + "\n" +
-                '}' +',' + '\n' +
-                '"' +"Title" + '"' + ':' + '"' + title + '"' + ',' + '\n' +
-                '"' +"PackUrl" + '"' + ':' + '"' + packurl + '"' + ',' + '\n' +
-                '"' +"Author" + '"' + ':' + '"' + author + '"' + ',' + '\n' +
-                '"' +"AuthorHome" + '"' + ':' + '"' + authorHome + '"' + ',' + '\n' +
-                '"' +"Downloads" + '"' + ':' + '"' + downloads + '"' + ',' + '\n' +
-                '"' +"Updated" + '"' + ':' + '"' + updated + '"' + ',' + '\n' +
-                '"' +"Created" + '"' + ':' + '"' + created + '"' + ',' + '\n' +
-                '"' +"Description" + '"' + ':' + '"' + description + '"' + ',' + '\n' +
-                '"' +"Tags" + '"' + ':' + tags + '\n' +
+                '}' + ',' + '\n' +
+                '"' + "Title" + '"' + ':' + '"' + title + '"' + ',' + '\n' +
+                '"' + "PackUrl" + '"' + ':' + '"' + packurl + '"' + ',' + '\n' +
+                '"' + "Author" + '"' + ':' + '"' + author + '"' + ',' + '\n' +
+                '"' + "AuthorHome" + '"' + ':' + '"' + authorHome + '"' + ',' + '\n' +
+                '"' + "Downloads" + '"' + ':' + '"' + downloads + '"' + ',' + '\n' +
+                '"' + "Updated" + '"' + ':' + '"' + updated + '"' + ',' + '\n' +
+                '"' + "Created" + '"' + ':' + '"' + created + '"' + ',' + '\n' +
+                '"' + "Description" + '"' + ':' + '"' + description + '"' + ',' + '\n' +
+                '"' + "Tags" + '"' + ':' + tags + '\n' +
                 '}';
     }
 }

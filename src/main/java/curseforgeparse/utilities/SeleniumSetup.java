@@ -8,16 +8,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 
-
 public final class SeleniumSetup {
-    protected static WebDriver driver;
+    private SeleniumSetup(){}
 
-    public SeleniumSetup() {
-    }
+    protected static WebDriver driver;
 
     public static WebDriver setupDriver() {
         ChromeOptions options = new ChromeOptions();
-//        options.addArguments("--headless");
         options.setPageLoadStrategy(PageLoadStrategy.EAGER);
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver(options);
