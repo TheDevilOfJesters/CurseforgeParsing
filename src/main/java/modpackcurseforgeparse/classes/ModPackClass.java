@@ -1,15 +1,13 @@
-package curseforgeparse.classes;
+package modpackcurseforgeparse.classes;
 
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import org.bson.types.ObjectId;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "_id",
         "Title",
         "Packurl",
         "Author",
@@ -18,12 +16,12 @@ import org.bson.types.ObjectId;
         "Updated",
         "Created",
         "Description",
-        "tags"
+        "tags",
+        "gameVersions"
 })
 public class ModPackClass {
 
-    @JsonProperty("_id")
-    private ObjectId id;
+
     @JsonProperty("Title")
     private String title;
     @JsonProperty("Packurl")
@@ -42,16 +40,8 @@ public class ModPackClass {
     private String description;
     @JsonProperty("tags")
     private List<String> tags = null;
-
-    @JsonProperty("_id")
-    public ObjectId getId() {
-        return id;
-    }
-
-    @JsonProperty("_id")
-    public void setId(ObjectId id) {
-        this.id = id;
-    }
+    @JsonProperty("gameVersions")
+    private List<String> gameVersions = null;
 
     @JsonProperty("Title")
     public String getTitle() {
@@ -143,21 +133,10 @@ public class ModPackClass {
         this.tags = tags;
     }
 
-    @Override
-    public String toString() {
-        return "{" + '\n' +
-                '"' + "_id" + '"' + ':' + '{' + '\n' +
-                '"' + "$oid" + '"' + ':' + '"' + id + '"' + "\n" +
-                '}' + ',' + '\n' +
-                '"' + "Title" + '"' + ':' + '"' + title + '"' + ',' + '\n' +
-                '"' + "PackUrl" + '"' + ':' + '"' + packurl + '"' + ',' + '\n' +
-                '"' + "Author" + '"' + ':' + '"' + author + '"' + ',' + '\n' +
-                '"' + "AuthorHome" + '"' + ':' + '"' + authorHome + '"' + ',' + '\n' +
-                '"' + "Downloads" + '"' + ':' + '"' + downloads + '"' + ',' + '\n' +
-                '"' + "Updated" + '"' + ':' + '"' + updated + '"' + ',' + '\n' +
-                '"' + "Created" + '"' + ':' + '"' + created + '"' + ',' + '\n' +
-                '"' + "Description" + '"' + ':' + '"' + description + '"' + ',' + '\n' +
-                '"' + "Tags" + '"' + ':' + tags + '\n' +
-                '}';
-    }
+    @JsonProperty("gameVersions")
+    public List<String> getGameVersions(){return gameVersions; }
+
+    @JsonProperty("gameVersions")
+    public void setGameVersions(List<String> gameVersions){this.gameVersions = gameVersions;}
+
 }

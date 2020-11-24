@@ -1,17 +1,16 @@
-package curseforgeparse.utilities;
+package modpackcurseforgeparse.utilities;
 
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
-import curseforgeparse.Main;
+import modpackcurseforgeparse.Main;
 import org.bson.Document;
 
-import java.util.logging.Logger;
-
+import org.slf4j.Logger;
 
 public class ConnectionDB {
     protected static final Logger logger = Main.logger;
-    protected static MongoClient mongoClient = null;
+    protected static MongoClient mongoClient;
 
     private ConnectionDB() {}
 
@@ -28,7 +27,7 @@ public class ConnectionDB {
             logger.info("Returning collection");
             return collection;
         } catch(Exception ex){
-            logger.severe(ex.getMessage());
+            logger.error(ex.getMessage());
         }
         return collection;
     }

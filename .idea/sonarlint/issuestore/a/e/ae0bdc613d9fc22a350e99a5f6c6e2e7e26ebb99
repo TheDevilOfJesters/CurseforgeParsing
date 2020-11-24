@@ -1,7 +1,0 @@
-
-J
-java:S1874"-Remove this use of "getDB"; it is deprecated.(¡»™¡8Şçî©Ö.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ÿëª‡ıÿÿÿÿ8¢ùç©Ö.
-f
-java:S2095"IUse try-with-resources or close this "MongoClient" in a "finally" clause.(¤Å³‡8×ê©Ö.
-]	java:S125"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ8Ñ³æ©Ö.

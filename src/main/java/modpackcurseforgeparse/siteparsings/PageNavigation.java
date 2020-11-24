@@ -1,12 +1,12 @@
-package curseforgeparse.siteparsings;
+package modpackcurseforgeparse.siteparsings;
 
-import curseforgeparse.Main;
+import modpackcurseforgeparse.Main;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
-import java.util.logging.Logger;
+import org.slf4j.Logger;
 
 public class PageNavigation {
     protected static final String PAGENNATION = "/html/body/div[3]/main/div[1]/div[2]/section/div[2]/div/div[4]/div";
@@ -22,7 +22,7 @@ public class PageNavigation {
 
         logger.info(String.format("Controls: %d", paginationControls.size()));
         logger.info(String.format("Links: %d", paginationLinks.size()));
-        paginationControls.get(1).click(); //next page
+//        paginationControls.get(1).click(); //next page
     }
 
     public static boolean hasClass(WebElement element, String htmlClass) {

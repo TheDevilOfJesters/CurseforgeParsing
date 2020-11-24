@@ -1,7 +1,7 @@
-package curseforgeparse.utilities;
+package modcurseforgeparse.utilities;
 
-import curseforgeparse.Main;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import modpackcurseforgeparse.Main;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,6 +16,7 @@ public final class SeleniumSetup {
     public static WebDriver setupDriver() {
         ChromeOptions options = new ChromeOptions();
         options.setPageLoadStrategy(PageLoadStrategy.EAGER);
+        options.addArguments("window-size=1980,1080");
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver(options);
         return driver;
@@ -23,7 +24,7 @@ public final class SeleniumSetup {
 
     public static void teardown() {
         driver.quit();
-        Main.logger.info("\nDriver closed successfully");
+        Main.logger.info("Driver closed successfully");
     }
 
 
